@@ -3,18 +3,20 @@ using namespace std;
 int main(){
     int n,r;
     int a,b,c;
+    c=0;
+    b=n;
     int sum=0;
     cin>>n;
     while(n--){
         int i;
         i=n%10;
-        a=i*i*i;
+        b=b +(i*i*i);
         sum=sum+a;
         
         n=n/10;
     }
     
-    if(sum==n){
+    if(sum==b){
         cout<<"YES"<<endl;
     }
     else{
