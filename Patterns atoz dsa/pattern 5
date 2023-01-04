@@ -3,11 +3,11 @@ using namespace std;
 int main(){
   int t;
   cin>>t;
-   for(int i=0;i<t;++i){
-	        for(int j=t;j>i;--j){
+    for(int i=1;i<=n;++i){
+	        for(int j=0;j<n-i+1;j++){
 	            cout<<"*"<<" ";
 	        }
-	        cout<<"\n";
+	        cout<<endl;
 	    }
 	}
   
